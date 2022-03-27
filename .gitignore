@@ -1,0 +1,19 @@
+.DS_Store
+
+# Secrets and credentials
+*secret
+*credentials*.csv
+
+# Virtual Environments
+venv
+venv/*
+
+# Chalice deployents
+lambda/.chalice/deployed
+lambda/.chalice/deployments
+
+ __pycache__/
+ *.pyc
+.vscode
+.idea/*
+
