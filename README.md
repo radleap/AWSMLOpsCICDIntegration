@@ -11,3 +11,6 @@ Project related to integrating CICD Pipeline for ML Ops using AWS IAC.
 - https://docs.aws.amazon.com/sagemaker/latest/dg/onboard-quick-start.html
 - https://www.youtube.com/watch?v=Qv_Tr_BCFCQ
 - https://docs.aws.amazon.com/sagemaker/
+
+### Useful template code:
+- https://docs.aws.amazon.com/code-samples/latest/catalog/cloudformation-codepipeline-template-codepipeline-github-events-yaml.yml.html
