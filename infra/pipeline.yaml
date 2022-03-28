@@ -20,7 +20,7 @@ Parameters:
     Type: String
     MinLength: 1
   Branch:
-    Default: master
+    Default: main
     Description: Branch to use from Repo. Only the Name. not the URL
     Type: String
 Metadata:
@@ -139,20 +139,20 @@ Resources:
       Stages:
         - Name: Source
           Actions:
-            - Name: Source
+            - Name: SourceAction
               ActionTypeId:
                 Category: Source
                 Owner: ThirdParty
                 Provider: GitHub
-                Version: "1"
+                Version: 1
               Configuration:
-                Owner: !Ref "GitHubUser"
-                Repo: !Ref "Repo"
-                Branch: !Ref "Branch"
-                OAuthToken: !Ref "GitHubToken"
+                Owner: !Ref GitHubUser
+                Repo: !Ref Repo
+                Branch: !Ref Branch
+                OAuthToken: !Ref GitHubToken
               OutputArtifacts:
                 - Name: src
-              RunOrder: "1"
+              RunOrder: 1
         - Name: Build_and_Train
           Actions:
             - Name: ModelTraining
